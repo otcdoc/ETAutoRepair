@@ -27,6 +27,10 @@ Route::get('/specials', function () {
     return view('specials');
 });
 
+Route::get('/matt', function () {
+    return view('matt');
+});
+
 Route::get('/contact', function () {
     return view('contact');
 });
