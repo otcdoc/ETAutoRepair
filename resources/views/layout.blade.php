@@ -88,6 +88,13 @@
     .affix + .nav-pad {
         padding-top:50px;
     }
+    #banner-box {
+        background: rgba(107,154,224,.5);
+        border: 1px solid white;
+        margin: 20px 0;
+        height: 210px;
+        box-sizing: border-box;
+    }
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -102,8 +109,10 @@
     <!-- Banner -->
     <div id="banner">
         <div class="container">
-            <h1 id="store-name">E&T Auto Repair</h1>
-            <p id="store-address">1111 Some St. | Deer Park, NY 11111 | 123.456.7890</p>
+            <div id="banner-box">
+                <h1 id="store-name">E&T Auto Repair</h1>
+                <p id="store-address">1111 Some St. | Deer Park, NY 11111 | 123.456.7890</p>
+            </div>
         </div>
     </div>
     <!-- Navigation -->
