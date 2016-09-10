@@ -39,19 +39,19 @@
     #store-name, #store-address {
         color: white;
     }
-    .navbar {
+    .main-navbar {
     border-radius: 0;
     border: none;
     background-color: rgb(2,82,203);
     padding-top: 4px;
     margin-bottom: 0;
     }
-    .nav-justified > li {
+    .main-nav > li {
         display: table-cell;
         width: 1%;
         text-align: center;
     }
-    .nav-justified > li > a {
+    .main-nav > li > a {
         font-family:'Fjalla One', sans-serif;
         color: white;
         background-color: #cb2026;
@@ -60,23 +60,23 @@
         border-radius: 5px;
         transition: color .25s ease, background-color .25s ease;
     }
-    .nav-justified > li > a:hover, .nav-justified > li > a:focus, .nav-justified > li.open > a  {
+    .main-nav > li > a:hover, .main-nav > li > a:focus, .main-nav > li.open > a  {
         color: #cb2026;
     }
-    .nav .fa {
+    .main-navbar .fa {
         font-size: 1.5em;
         vertical-align: -.05em;
     }
     @media (max-width: 480px) {
-        .nav .fa {
+        .main-navbar .fa {
             font-size: 1.3em;
         }
-        .nav > li > a {
+        .main-navbar > li > a {
             padding-left: 0;
             padding-right: 0;
         }
     }
-    .nav .hidden-xs {
+    .main-navbar .hidden-xs {
         padding-left: .5em;
     }
     .affix {
@@ -107,10 +107,10 @@
         </div>
     </div>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse" role="navigation" data-spy="affix" data-offset-top="250">
+    <nav class="navbar navbar-inverse main-navbar" role="navigation" data-spy="affix" data-offset-top="250">
         <div class="container">
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <ul class="nav nav-justified">
+            <ul class="nav nav-justified main-nav">
                 <li>
                     <a href="{{ URL::to('/') }}" aria-label="Home" title="Home"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs">Home</span></a>
                 </li>
