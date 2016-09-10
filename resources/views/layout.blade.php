@@ -133,6 +133,9 @@
                     <a href="{{ URL::to('/specials') }}" aria-label="Specials" title="Specials"><i class="fa fa-star" aria-hidden="true"></i><span class="hidden-xs">Specials</span></a>
                 </li>
                 <li>
+                    <a href="{{ URL::to('/matt') }}" aria-label="Contact" title="Contact"><i class="fa fa-envelope" aria-hidden="true"></i><span class="hidden-xs">Matt</span></a>
+                </li>
+                <li>
                     <a href="{{ URL::to('/contact') }}" aria-label="Contact" title="Contact"><i class="fa fa-envelope" aria-hidden="true"></i><span class="hidden-xs">Contact</span></a>
                 </li>
             </ul>
