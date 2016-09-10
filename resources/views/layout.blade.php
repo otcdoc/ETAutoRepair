@@ -106,6 +106,7 @@
     <!-- Google Analytics -->
 </head>
 <body>
+    @yield('fbsdk')
     <!-- Banner -->
     <div id="banner">
         <div class="container">
@@ -130,7 +131,7 @@
                     <a href="{{ URL::to('/profiles') }}" aria-label="Profiles" title="Profiles"><i class="fa fa-users" aria-hidden="true"></i><span class="hidden-xs">Profiles</span></a>
                 </li>
                 <li>
-                    <a href="{{ URL::to('/specials') }}" aria-label="Specials" title="Specials"><i class="fa fa-star" aria-hidden="true"></i><span class="hidden-xs">Specials</span></a>
+                    <a href="{{ URL::to('/news') }}" aria-label="News" title="News"><i class="fa fa-star" aria-hidden="true"></i><span class="hidden-xs">News</span></a>
                 </li>
                 <li>
                     <a href="{{ URL::to('/matt') }}" aria-label="Contact" title="Contact"><i class="fa fa-envelope" aria-hidden="true"></i><span class="hidden-xs">Matt</span></a>

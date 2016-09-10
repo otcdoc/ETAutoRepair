@@ -23,8 +23,8 @@ Route::get('/profiles', function () {
     return view('profiles');
 });
 
-Route::get('/specials', function () {
-    return view('specials');
+Route::get('/news', function () {
+    return view('news');
 });
 
 Route::get('/matt', function () {
