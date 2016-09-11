@@ -12,11 +12,8 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-<<<<<<< HEAD
                 <div class="fill" style="background-image:url('http://inertiaddict.com/images/frontend.png');"></div>
-=======
                 <div class="fill" style="background-image:url('http://inertiaddict.com/images/WorkingonCar.jpg');"></div>
->>>>>>> origin/master
                 <div id="banner">
                     <div class="container">
                         <div class="carousel-caption">
@@ -47,13 +44,8 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <div id="caption-banner-box">
-<<<<<<< HEAD
                                 <h2>Established and Tested</h2>
                                 <p>Since 1971 we have been the right choice for auto and light truck repair in Suffolk County.</p>
-=======
-                            <h2>Established and Tested</h2>
-                            <p>Since 1971 we have been the right choice for auto and light truck repair in Suffolk County.</p>
->>>>>>> origin/master
                             </div>
                         </div>
                     </div>
@@ -77,38 +69,31 @@
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">
+                <h1 class="page-header" style="color:red; font-weight:bold;">
                     Welcome to E&amp;T Auto Repair
                 </h1>
             </div>
             <div class="col-md-12">
-                <div class="panel panel-default">
+                <div class="panel panel-default" style="border-color:#9ecaed;
+    box-shadow: 0px 0px 90px #0000ff">
                     <div class="panel-heading">
-<<<<<<< HEAD
-                        <h4 class="center-this"><i class="fa fa-fw fa-check"></i> E&T stands for Experience and Trust</h4>
-=======
-                        <h4><i class="fa fa-fw fa-check"></i> E&amp;T stands for Experience and Trust</h4>
->>>>>>> origin/master
+                        <h4 class="center-this" style="color:red; font-weight:bold;"><i class="fa fa-fw fa-check"></i> E&T stands for Experience and Trust</h4>
                     </div>
-                    <div class="panel-body">
-                        <p class="center-this" >We are a family owned and operated repair shop with a keen focus on customer service and satisfaction. We employ both New York State and ASE certified technicians. Our professionalism sets us apart from the rest. Visit us for a complete line of maintenance and repair needs. A friendly, clean and efficient shop that strives to make our customers feel welcome, comfortable and satisfied with each repair. </p>
-                        <a href="/contact" class="btn btn-default" class="center-this">Contact Us!</a>
+                    <div class="panel-body, center-this">
+                        <p>We are a family owned and operated repair shop with a keen focus on customer service and satisfaction. We employ both New York State and ASE certified technicians. Our professionalism sets us apart from the rest. Visit us for a complete line of maintenance and repair needs. A friendly, clean and efficient shop that strives to make our customers feel welcome, comfortable and satisfied with each repair. </p>
+                        <a href="/contact" style="margin: 2px 0px 15px 0px; background-color: red; color: white; font-weight: bold;" class="btn btn-default" class="center-this">Contact Us!</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
-                <div class="panel panel-default">
+                <div class="panel panel-default" style="border-color:#9ecaed;
+    box-shadow: 0px 0px 90px #0000ff">
                     <div class="panel-heading">
-                        <h4 class="center-this" ><i class="fa fa-fw fa-gift"></i> Visit Our News Page!</h4>
+                        <h4 class="center-this" style="color:red; font-weight:bold;"><i class="fa fa-fw fa-gift"></i> Visit Our News Page!</h4>
                     </div>
-                    <div class="panel-body">
-<<<<<<< HEAD
-                        <p class="center-this" >Looking for something to make you smile? Come check out our news page and, if you use it, you can follow us on Facebook! We're happy to make your day and inspect your vehicle.</p>
-                        <a href="/news" class="btn btn-default" class="center-this">E&T News!</a>
-=======
+                    <div class="panel-body, center-this">
                         <p>Looking for something to make you smile? Come check out our news page and, if you use it, you can follow us on Facebook! We're happy to make your day and inspect your vehicle.</p>
-                        <a href="/news" class="btn btn-default" class="center-this">E&amp;T News!</a>
->>>>>>> origin/master
+                        <a href="/news" style="margin: 2px 0px 15px 0px; background-color: red; color: white; font-weight: bold;" class="btn btn-default" class="center-this">E&amp;T News!</a>
                     </div>
                 </div>
             </div>
@@ -120,38 +105,44 @@
         <div class="row">
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img style="height: 370px; width: 700px; border-color:#9ecaed;
+    box-shadow: 0px 0px 90px #ff0000" class="img-responsive img-portfolio img-hover" src="http://inertiaddict.com/images/home_0_5.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img style="height: 370px; width: 700px; border-color:#9ecaed;
+    box-shadow: 0px 0px 90px #ff0000" class="img-responsive img-portfolio img-hover" src="http://inertiaddict.com/images/home_0_12.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img style="height: 370px; width: 700px; border-color:#9ecaed;
+    box-shadow: 0px 0px 90px #ff0000" class="img-responsive img-portfolio img-hover" src="http://inertiaddict.com/images/home_0_4.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img style="height: 370px; width: 700px; border-color:#9ecaed;
+    box-shadow: 0px 0px 90px #ff0000" class="img-responsive img-portfolio img-hover" src="http://inertiaddict.com/images/home_0_3.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img style="height: 370px; width: 700px; border-color:#9ecaed;
+    box-shadow: 0px 0px 90px #ff0000" class="img-responsive img-portfolio img-hover" src="http://inertiaddict.com/images/home_0_7.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img style="height: 370px; width: 700px; border-color:#9ecaed;
+    box-shadow: 0px 0px 90px #ff0000" class="img-responsive img-portfolio img-hover" src="http://inertiaddict.com/images/home_0_8.jpg" alt="">
                 </a>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Features Section -->
+        <!-- Features Section --
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">Modern Business Features</h2>
@@ -173,11 +164,11 @@
                 <img class="img-responsive" src="http://placehold.it/700x450" alt="">
             </div>
         </div>
-        <!-- /.row -->
+        <!-- /.row --
 
         <hr>
 
-        <!-- Call to Action Section -->
+        <!-- Call to Action Section --
         <div class="well">
             <div class="row">
                 <div class="col-md-8">
@@ -187,7 +178,7 @@
                     <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
                 </div>
             </div>
-        </div>
+        </div>-->
 @stop
 @section('postjquery')
 
