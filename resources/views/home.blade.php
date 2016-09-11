@@ -12,7 +12,11 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
+<<<<<<< HEAD
+                <div class="fill" style="background-image:url('http://inertiaddict.com/images/frontend.png');"></div>
+=======
                 <div class="fill" style="background-image:url('http://inertiaddict.com/images/WorkingonCar.jpg');"></div>
+>>>>>>> origin/master
                 <div id="banner">
                     <div class="container">
                         <div class="carousel-caption">
@@ -43,8 +47,13 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <div id="caption-banner-box">
+<<<<<<< HEAD
+                                <h2>Established and Tested</h2>
+                                <p>Since 1971 we have been the right choice for auto and light truck repair in Suffolk County.</p>
+=======
                             <h2>Established and Tested</h2>
                             <p>Since 1971 we have been the right choice for auto and light truck repair in Suffolk County.</p>
+>>>>>>> origin/master
                             </div>
                         </div>
                     </div>
@@ -60,6 +69,7 @@
             <span class="icon-next"></span>
         </a>
     </header>
+    
 
     <!-- Page Content -->
     <div class="container">
@@ -71,47 +81,43 @@
                     Welcome to E&amp;T Auto Repair
                 </h1>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
+<<<<<<< HEAD
+                        <h4 class="center-this"><i class="fa fa-fw fa-check"></i> E&T stands for Experience and Trust</h4>
+=======
                         <h4><i class="fa fa-fw fa-check"></i> E&amp;T stands for Experience and Trust</h4>
+>>>>>>> origin/master
                     </div>
                     <div class="panel-body">
-                        <p>We are a family owned and operated repair shop with a keen focus on customer service and satisfaction. We employ both New York State and ASE certified technicians. Our professionalism sets us apart from the rest. Visit us for a complete line of maintenance and repair needs. A friendly, clean and efficient shop that strives to make our customers feel welcome, comfortable and satisfied with each repair. </p>
+                        <p class="center-this" >We are a family owned and operated repair shop with a keen focus on customer service and satisfaction. We employ both New York State and ASE certified technicians. Our professionalism sets us apart from the rest. Visit us for a complete line of maintenance and repair needs. A friendly, clean and efficient shop that strives to make our customers feel welcome, comfortable and satisfied with each repair. </p>
                         <a href="/contact" class="btn btn-default" class="center-this">Contact Us!</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> Visit Our News Page!</h4>
+                        <h4 class="center-this" ><i class="fa fa-fw fa-gift"></i> Visit Our News Page!</h4>
                     </div>
                     <div class="panel-body">
+<<<<<<< HEAD
+                        <p class="center-this" >Looking for something to make you smile? Come check out our news page and, if you use it, you can follow us on Facebook! We're happy to make your day and inspect your vehicle.</p>
+                        <a href="/news" class="btn btn-default" class="center-this">E&T News!</a>
+=======
                         <p>Looking for something to make you smile? Come check out our news page and, if you use it, you can follow us on Facebook! We're happy to make your day and inspect your vehicle.</p>
                         <a href="/news" class="btn btn-default" class="center-this">E&amp;T News!</a>
+>>>>>>> origin/master
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <!-- /.row -->
 
         <!-- Portfolio Section -->
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Portfolio Heading</h2>
-            </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">

@@ -102,6 +102,11 @@
         margin: 20px 0;
         box-sizing: border-box;
     }
+<<<<<<< HEAD
+    .center-this {
+            text-align:center;
+        }
+=======
     #guarenteed {
         margin-top: .25em;
         margin-bottom: .25em;
@@ -109,6 +114,7 @@
         box-sizing: border-box;
         line-height: 1.1em;
     }
+>>>>>>> origin/master
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
