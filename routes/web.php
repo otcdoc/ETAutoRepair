@@ -27,10 +27,6 @@ Route::get('/news', function () {
     return view('news');
 });
 
-Route::get('/matt', function () {
-    return view('matt');
-});
-
 Route::get('/contact', function () {
     return view('contact');
 });
