@@ -1,6 +1,6 @@
 @extends('layout')
 @section('title')
-503 - E&amp;T Repair, Inc.
+500 - E&amp;T Repair, Inc.
 @stop
 @section('styles')
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}"/>
@@ -13,7 +13,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Service Unavailable</h1>
+                <h1 class="page-header">Internal Server Error</h1>
             </div>
         </div>
         <!-- /.row -->
@@ -21,7 +21,7 @@
         <!-- Content Row -->
         <div class="row">
             <div class="col-md-12">
-                Our servers appear to be down.  Please contact our webmaster at mfallon@otchest.com if the problem persists.  We'll work to get it back up as soon as possible.
+                We've encountered a problem.  Please contact our webmaster at mfallon@otchest.com if the problem persists.  We'll work to get it back up as soon as possible.
             </div>
         </div>
 @stop
