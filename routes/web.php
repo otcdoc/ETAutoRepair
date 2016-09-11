@@ -19,12 +19,12 @@ Route::get('/services', function () {
     return view('services');
 });
 
-Route::get('/profiles', function () {
-    return view('profiles');
-});
-
 Route::get('/news', 'NewsController@getNews' );
 
 Route::get('/contact', function () {
     return view('contact');
+});
+
+Route::get('/privacypolicy', function() {
+	return view('privacypolicy');
 });
