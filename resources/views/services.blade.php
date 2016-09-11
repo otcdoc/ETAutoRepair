@@ -101,4 +101,15 @@
 
             </div>
         </div>
+
+        <hr>
+        <div class="center-this"> 
+            <img src="http://inertiaddict.com/images/mastercard.jpg" alt="We accept Visa and Mastercard">
+            <img src="http://inertiaddict.com/images/nyscertified.jpg" alt="New York State Certified Automotive Technicians">
+            <img src="http://inertiaddict.com/images/nysinspections.jpg" alt="New York State Inspection Station">            
+            <img src="http://inertiaddict.com/images/asecert.jpg" alt="National Institute of Automotive Service Excellence">
+            <img src="http://inertiaddict.com/images/iatncert.jpg" alt="International Automotive Technicians Network">
+            <img src="http://inertiaddict.com/images/gasdacert.jpg" alt="Gasoline and Automotive Service Dealers of America">
+        </div>
+        <hr>
 @stop
