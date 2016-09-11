@@ -35,6 +35,7 @@
         height: 250px;
         text-align: center;
         background: black url("{{ URL::asset('img/bg.png') }}") repeat-x top;
+        color: white;
     }
     #store-name, #store-address {
         color: white;
@@ -101,9 +102,19 @@
         margin: 20px 0;
         box-sizing: border-box;
     }
+<<<<<<< HEAD
     .center-this {
             text-align:center;
         }
+=======
+    #guarenteed {
+        margin-top: .25em;
+        margin-bottom: .25em;
+        font-size: 1.1em;
+        box-sizing: border-box;
+        line-height: 1.1em;
+    }
+>>>>>>> origin/master
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -115,13 +126,18 @@
     <!-- Google Analytics -->
 </head>
 <body>
-    @yield('fbsdk')
     <!-- Banner -->
     <div id="banner">
         <div class="container">
-            <div id="banner-box"> == $0
-                <h1 id="store-name">E&T Auto Repair</h1>
-                <p id="store-address">1111 Some St. | Deer Park, NY 11111 | 123.456.7890</p>
+            <div id="banner-box" class="row">
+                <div class="col-md-8">
+                    <h1 id="store-name">E&amp;T Auto Repair</h1>
+                    <p id="store-address">1111 Some St. | Deer Park, NY 11111 | 123.456.7890</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="hidden-xs hidden-sm">The right choice for auto and light truck repair in Suffolk County since 1971.</div>
+                    <div id="guarenteed" class="label label-danger">All Work Guarenteed!</div>
+                </div>
             </div>
         </div>
     </div>
@@ -135,9 +151,6 @@
                 </li>
                 <li>
                     <a href="{{ URL::to('/services') }}" aria-label="Services" title="Services"><i class="fa fa-wrench" aria-hidden="true"></i><span class="hidden-xs">Services</span></a>
-                </li>
-                <li>
-                    <a href="{{ URL::to('/profiles') }}" aria-label="Profiles" title="Profiles"><i class="fa fa-users" aria-hidden="true"></i><span class="hidden-xs">Profiles</span></a>
                 </li>
                 <li>
                     <a href="{{ URL::to('/news') }}" aria-label="News" title="News"><i class="fa fa-star" aria-hidden="true"></i><span class="hidden-xs">News</span></a>
@@ -156,6 +169,25 @@
         <!-- Footer -->
         <footer>
             <div class="row">
+                <div class="col-sm-6">
+                    <div class="contact-heading">Contact Us:</div>
+                    <div>509 Commack Rd</div>
+                    <div>Deer Park, NY 11729</div>
+                    <div>(631) 586-7110</div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="contact-heading">Follow us:</div>
+                        <ul class="list-unstyled list-inline list-social-icons">
+                            <li>
+                                <a href="https://www.facebook.com/ET-Auto-Repair-Inc-194281337341129/"><i class="fa fa-facebook-square fa-2x"></i></a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="copyright col-sm-12">
+                    <div>Copyright &copy; E&amp;T Auto Repair {{ date('Y') }} - <a href="{{ URL::to('/privacypolicy') }}">Privacy Policy</a> - Powered by <a href="http://otchest.com" target="_blank">Off The Chest Ent</a>.</div>
+                </div>
             </div>
         </footer>
     </div>
