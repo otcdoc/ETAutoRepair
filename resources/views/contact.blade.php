@@ -27,10 +27,10 @@
                 </p>
                 <p><i class="fa fa-phone"></i> 
                     <abbr title="Phone">P</abbr>: (631) 586-7110</p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Fax">P</abbr>: (631) 586-7111</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="24 Hr Towing">P</abbr>: (917) 586-4300</p>
+                <p><i class="fa fa-fax"></i> 
+                    <abbr title="Fax">F</abbr>: (631) 586-7111</p>
+                <p><i class="fa fa-truck"></i> 
+                    <abbr title="24 Hour Towing">T</abbr>: (917) 586-4300</p>
                 <p><i class="fa fa-envelope-o"></i> 
                     <abbr title="Email">E</abbr>: <a href="service@etautodeerparkny.com">service@etautodeerparkny.com</a>
                 </p>
