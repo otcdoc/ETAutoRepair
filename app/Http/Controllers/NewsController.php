@@ -12,18 +12,16 @@ class NewsController extends Controller
 
     public function getNews(){
 
-    	//$accessToken = '1115550901858422|UfDzZtW3oaAR0YcAOQOrlauyXSM';
-
     	$fb = new \Facebook\Facebook([
 		  'app_id' => '1115550901858422',
 		  'app_secret' => '55076b8a8f66cf8c72851c31802c2043',
-		  'default_graph_version' => 'v2.5',
+		  'default_graph_version' => 'v2.7',
 		]);
 
     	try {
 			// Returns a `Facebook\FacebookResponse` object
 		    $response = $fb->get(
-		        '194281337341129?fields=posts.limit(5)',
+		        '194281337341129/posts?fields=message,created_time,full_picture,properties,id,type',
 		        $fb->getApp()->getAccessToken()->getValue()
 		    );
 			} catch(\Facebook\Exceptions\FacebookResponseException $e) {
@@ -34,8 +32,9 @@ class NewsController extends Controller
 			exit;
 		}
 
-		var_dump($response);
-		// OR
-		// echo 'Name: ' . $user->getName();    }
+
+		$graphEdge = $response->getGraphEdge();
+
+		return view('news')->with('graphEdge', $graphEdge);
 	}
 }
