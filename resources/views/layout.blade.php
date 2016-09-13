@@ -29,18 +29,30 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/modern-business.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/app.css') }}"/>
     <style>
-    body {
+    @keyframes smoke {
+        0% { transform: translate(0,0); opacity: 0; font-size: 1em;}
+        25% { transform: translate(-10px,-1.25px); opacity: 1; font-size: 1.25em;}
+        50% { transform: translate(-20px,-2.5px); opacity: 1; font-size: 1.5em;}
+        75% { transform: translate(-30px,-11.25px); opacity: 1; font-size: 1.75em;}
+        100% { transform: translate(-40px,-20px); opacity: 0; font-size: 2em;}
+    }
+    @keyframes cloud {
+        0% { transform: translate(0,0); opacity: 0;}
+        25% { transform: translateX(-60px); opacity: 1;}
+        50% { transform: translateX(-120px); opacity: 1;}
+        75% { transform: translateX(-180px); opacity: 1;}
+        100% { transform: translateX(-240px); opacity: 0;}
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
     #banner {
         height: 250px;
         text-align: center;
-        background: black url("{{ URL::asset('img/bg.png') }}") repeat-x top;
+        background: black url('img/bg.png') repeat-x top;
         color: white;
     }
-    /*@keyframes ride-in {
-        from {transform: translate(-200px, 0);}
-        to {transform: translate(0px, 0);}
-    }*/
     #banner-car {
         margin-top: 108px;
         max-height:80px;
@@ -48,8 +60,6 @@
         margin-right: auto;
         z-index: 5;
         position: relative;
-        /*animation-name: ride-in;
-        animation-duration: 2s;*/
     }
     #banner-logo {
         max-height:168px;
@@ -57,11 +67,6 @@
         margin-right: auto;
         background-color: rgba(255,255,255,.8);
         border: 3px solid black;
-    }
-    @media screen and (max-width: 1048px) {
-        #banner-logo {
-            max-height: 130px;
-        }
     }
     #store-name, #store-address {
         color: white;
@@ -94,15 +99,6 @@
     .main-navbar .fa {
         font-size: 1.5em;
         vertical-align: -.05em;
-    }
-    @media (max-width: 480px) {
-        .main-navbar .fa {
-            font-size: 1.3em;
-        }
-        .main-navbar > li > a {
-            padding-left: 0;
-            padding-right: 0;
-        }
     }
     .main-navbar .hidden-xs {
         padding-left: .5em;
@@ -165,6 +161,9 @@
     #contact-header {
         font-weight: bold;
     }
+    .contact-head-text {
+        font-weight: 600;
+    }
     .guarenteed {
         font-size: 1.1em;
         box-sizing: border-box;
@@ -177,13 +176,6 @@
     }
     #banner-car-wrap {
         position: relative;
-    }
-    @keyframes smoke {
-        0% { transform: translate(0,0); opacity: 0; font-size: 1em;}
-        25% { transform: translate(-10px,-1.25px); opacity: 1; font-size: 1.25em;}
-        50% { transform: translate(-20px,-2.5px); opacity: 1; font-size: 1.5em;}
-        75% { transform: translate(-30px,-11.25px); opacity: 1; font-size: 1.75em;}
-        100% { transform: translate(-40px,-20px); opacity: 0; font-size: 2em;}
     }
     .smoke {
         position: absolute;
@@ -213,13 +205,6 @@
         color: rgb(192,192,192);
         z-index: 4;
     }
-    @keyframes cloud {
-        0% { transform: translate(0,0); opacity: 0;}
-        25% { transform: translateX(-60px); opacity: 1;}
-        50% { transform: translateX(-120px); opacity: 1;}
-        75% { transform: translateX(-180px); opacity: 1;}
-        100% { transform: translateX(-240px); opacity: 0;}
-    }
     #cloud {
         position: absolute;
         top: -100px;
@@ -230,10 +215,6 @@
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
-    }
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
     }
     .wheel {
         position: absolute;
@@ -254,6 +235,37 @@
     #wheel2 {
         bottom: 17px;
         left: 217px;
+    }
+    .blue-font {
+        color: #0000ff;
+    }
+    @media (max-width: 1199px) {
+        #cloud {
+            right: 0px;
+        }
+        #wheel1 {
+            left: 73px;
+        }
+        #wheel2 {
+            left: 184px;
+        }
+        .smoke {
+            left: 57px;
+        }
+    }
+    @media screen and (max-width: 1048px) {
+        #banner-logo {
+            max-height: 130px;
+        }
+    }
+    @media (max-width: 480px) {
+        .main-navbar .fa {
+            font-size: 1.3em;
+        }
+        .main-navbar > li > a {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -280,7 +292,6 @@
                         <span id="cloud" class="cloud"><i class="fa fa-cloud" aria-hidden="true"></i></span>
                         <span id="wheel1" class="wheel"></i></span>
                         <span id="wheel2" class="wheel"></i></span>
-
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -289,8 +300,8 @@
                 </div>
                 <div class="col-md-4 hidden-sm hidden-xs">
                     <h3 id="contact-header">Contact Us!</h3>
-                    <p>509 Commack Rd | Deer Park, NY 11729</p>
-                    <p>The right choice for auto and light truck repair in Suffolk County since 1971.</p>
+                    <p class="contact-head-text">509 Commack Rd | Deer Park, NY 11729</p>
+                    <p class="contact-head-text">The right choice for auto and light truck repair in Suffolk County since 1971.</p>
                     <div class="guarenteed label">All Work Guarenteed!</div>
                 </div>
             </div>

@@ -20,17 +20,17 @@
         <div class="row">
             <div class="col-md-1 text-center">
             @if ($graphNode['type'] == 'photo')
-                <p><i class="fa fa-camera fa-4x"></i></p>
+                <p><i class="fa fa-camera blue-font fa-4x"></i></p>
             @elseif ($graphNode['type'] == 'link')
-                <p><i class="fa fa-link fa-4x"></i></p>
+                <p><i class="fa fa-link blue-font fa-4x"></i></p>
             @elseif ($graphNode['type'] == 'status')
-                <p><i class="fa fa-pencil-square fa-4x"></i></p>
+                <p><i class="fa fa-pencil-square blue-font fa-4x"></i></p>
             @elseif ($graphNode['type'] == 'video')
-                <p><i class="fa fa-film fa-4x"></i></p>
+                <p><i class="fa fa-film blue-font fa-4x"></i></p>
             @elseif ($graphNode['type'] == 'offer')
-                <p><i class="fa fa-money fa-4x"></i></p>
+                <p><i class="fa fa-money blue-font fa-4x"></i></p>
             @else
-                <p><i class="fa fa-comment fa-4x"></i></p>
+                <p><i class="fa fa-comment blue-font fa-4x"></i></p>
             @endif
                 <p>{{ $graphNode['created_time']->format('F d, Y') }}</p>
             </div>
