@@ -179,20 +179,20 @@
         position: relative;
     }
     @keyframes smoke {
-        0% { transform: translate(0,0);}
-        25% { transform: translate(-10px,-1.25px);}
-        50% { transform: translate(-20px,-2.5px);}
-        75% { transform: translate(-30px,-11.25px);}
-        100% { transform: translate(-40px,-20px);}
+        0% { transform: translate(0,0); opacity: 0; font-size: 1em;}
+        25% { transform: translate(-10px,-1.25px); opacity: 1; font-size: 1.25em;}
+        50% { transform: translate(-20px,-2.5px); opacity: 1; font-size: 1.5em;}
+        75% { transform: translate(-30px,-11.25px); opacity: 1; font-size: 1.75em;}
+        100% { transform: translate(-40px,-20px); opacity: 0; font-size: 2em;}
     }
     .smoke {
         position: absolute;
         bottom: 25px;
         left: 90px;
-        z-index: 0;
         animation-name: smoke;
         animation-duration: 1s;
         animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
     #smoke1 {
         color: rgb(96,96,96);
@@ -212,6 +212,48 @@
         animation-delay: .75s;
         color: rgb(192,192,192);
         z-index: 4;
+    }
+    @keyframes cloud {
+        0% { transform: translate(0,0); opacity: 0;}
+        25% { transform: translateX(-60px); opacity: 1;}
+        50% { transform: translateX(-120px); opacity: 1;}
+        75% { transform: translateX(-180px); opacity: 1;}
+        100% { transform: translateX(-240px); opacity: 0;}
+    }
+    #cloud {
+        position: absolute;
+        top: -100px;
+        right: 40px;
+        font-size: 4em;
+        z-index: 1;
+        animation-name: cloud;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    .wheel {
+        position: absolute;
+        background: url('/img/wheel.png');
+        background-size: contain;
+        z-index: 6;
+        height: 24px;
+        width: 24px;
+        animation-name: spin;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    #wheel1 {
+        bottom: 17px;
+        left: 106px;
+    }
+    #wheel2 {
+        bottom: 17px;
+        left: 217px;
     }
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -235,6 +277,10 @@
                         <span id="smoke2" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
                         <span id="smoke3" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
                         <span id="smoke4" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span id="cloud" class="cloud"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span id="wheel1" class="wheel"></i></span>
+                        <span id="wheel2" class="wheel"></i></span>
+
                     </div>
                 </div>
                 <div class="col-md-4">
