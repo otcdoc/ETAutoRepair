@@ -37,6 +37,32 @@
         background: black url("{{ URL::asset('img/bg.png') }}") repeat-x top;
         color: white;
     }
+    /*@keyframes ride-in {
+        from {transform: translate(-200px, 0);}
+        to {transform: translate(0px, 0);}
+    }*/
+    #banner-car {
+        margin-top: 108px;
+        max-height:80px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 5;
+        position: relative;
+        /*animation-name: ride-in;
+        animation-duration: 2s;*/
+    }
+    #banner-logo {
+        max-height:168px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255,255,255,.8);
+        border: 3px solid black;
+    }
+    @media screen and (max-width: 1048px) {
+        #banner-logo {
+            max-height: 130px;
+        }
+    }
     #store-name, #store-address {
         color: white;
     }
@@ -46,6 +72,7 @@
     background-color: rgb(2,82,203);
     padding-top: 4px;
     margin-bottom: 0;
+    box-shadow: 0px 0px 6px 0 black;
     }
     .main-nav > li {
         display: table-cell;
@@ -105,12 +132,86 @@
     .center-this {
             text-align: center;
         }
-    #guarenteed {
-        margin-top: .25em;
-        margin-bottom: .25em;
+    .page-header {
+        color:red;
+        font-weight:bold;
+    }
+    .blue-shadow {
+        border-color:#9ecaed;
+        box-shadow: 0px 3px 3px 0 #0000ff;
+    }
+    .panel-heading {
+        color:red;
+        font-weight:bold;
+        text-align: center;
+    }
+    .btn-red {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    .btn-red:hover {
+        color: red;
+        background-color: white;
+        transition: color .25s ease, background-color .25s ease;
+    }
+    .red-shadow-img {
+        height: 370px;
+        width: 700px;
+        border-color:#9ecaed;
+        box-shadow: 0px 3px 3px 0 #ff0000;
+    }
+    #contact-header {
+        font-weight: bold;
+    }
+    .guarenteed {
         font-size: 1.1em;
         box-sizing: border-box;
-        line-height: 1.1em;
+        background-color: #cb2026;
+        color: white;
+        font-weight: bold;
+        max-width: 190px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #banner-car-wrap {
+        position: relative;
+    }
+    @keyframes smoke {
+        0% { transform: translate(0,0);}
+        25% { transform: translate(-10px,-1.25px);}
+        50% { transform: translate(-20px,-2.5px);}
+        75% { transform: translate(-30px,-11.25px);}
+        100% { transform: translate(-40px,-20px);}
+    }
+    .smoke {
+        position: absolute;
+        bottom: 25px;
+        left: 90px;
+        z-index: 0;
+        animation-name: smoke;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #smoke1 {
+        color: rgb(96,96,96);
+        z-index: 1;
+    }
+    #smoke2 {
+        animation-delay: .25s;
+        color: rgb(128,128,128);
+        z-index: 2;
+    }
+    #smoke3 {
+        animation-delay: .5s;
+        color: rgb(160,160,160);
+        z-index: 3;
+    }
+    #smoke4 {
+        animation-delay: .75s;
+        color: rgb(192,192,192);
+        z-index: 4;
     }
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -127,13 +228,24 @@
     <div id="banner">
         <div class="container">
             <div id="banner-box" class="row">
-                <div class="col-md-8">
-                    <h1 id="store-name">E&amp;T Auto Repair</h1>
-                    <p id="store-address">1111 Some St. | Deer Park, NY 11111 | 123.456.7890</p>
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <div id="banner-car-wrap">
+                        <img id="banner-car" class="img-responsive" src="{{ URL::asset('img/logo-car.png') }}">
+                        <span id="smoke1" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span id="smoke2" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span id="smoke3" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span id="smoke4" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="hidden-xs hidden-sm">The right choice for auto and light truck repair in Suffolk County since 1971.</div>
-                    <div id="guarenteed" class="label label-danger">All Work Guarenteed!</div>
+                    <h1 class="center-this"><img id="banner-logo" class="img-responsive" src="{{ URL::asset('img/header-logo.png') }}"></h1>
+                    <div class="visible-sm visible-xs guarenteed label">All Work Guarenteed!</div>
+                </div>
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <h3 id="contact-header">Contact Us!</h3>
+                    <p>509 Commack Rd | Deer Park, NY 11729</p>
+                    <p>The right choice for auto and light truck repair in Suffolk County since 1971.</p>
+                    <div class="guarenteed label">All Work Guarenteed!</div>
                 </div>
             </div>
         </div>
@@ -201,5 +313,7 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     @yield('postjquery')
+    <script>
+    </script>
 </body>
 </html>
