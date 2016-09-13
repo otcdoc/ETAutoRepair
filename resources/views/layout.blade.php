@@ -29,13 +29,44 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/modern-business.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/app.css') }}"/>
     <style>
-    body {
+    @keyframes smoke {
+        0% { transform: translate(0,0); opacity: 0; font-size: 1em;}
+        25% { transform: translate(-10px,-1.25px); opacity: 1; font-size: 1.25em;}
+        50% { transform: translate(-20px,-2.5px); opacity: 1; font-size: 1.5em;}
+        75% { transform: translate(-30px,-11.25px); opacity: 1; font-size: 1.75em;}
+        100% { transform: translate(-40px,-20px); opacity: 0; font-size: 2em;}
+    }
+    @keyframes cloud {
+        0% { transform: translate(0,0); opacity: 0;}
+        25% { transform: translateX(-60px); opacity: 1;}
+        50% { transform: translateX(-120px); opacity: 1;}
+        75% { transform: translateX(-180px); opacity: 1;}
+        100% { transform: translateX(-240px); opacity: 0;}
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
     #banner {
         height: 250px;
         text-align: center;
-        background: black url("{{ URL::asset('img/bg.png') }}") repeat-x top;
+        background: black url('img/bg.png') repeat-x top;
         color: white;
+    }
+    #banner-car {
+        margin-top: 108px;
+        max-height:80px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 5;
+        position: relative;
+    }
+    #banner-logo {
+        max-height:168px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255,255,255,.8);
+        border: 3px solid black;
     }
     #store-name, #store-address {
         color: white;
@@ -46,6 +77,7 @@
     background-color: rgb(2,82,203);
     padding-top: 4px;
     margin-bottom: 0;
+    box-shadow: 0px 0px 6px 0 black;
     }
     .main-nav > li {
         display: table-cell;
@@ -67,15 +99,6 @@
     .main-navbar .fa {
         font-size: 1.5em;
         vertical-align: -.05em;
-    }
-    @media (max-width: 480px) {
-        .main-navbar .fa {
-            font-size: 1.3em;
-        }
-        .main-navbar > li > a {
-            padding-left: 0;
-            padding-right: 0;
-        }
     }
     .main-navbar .hidden-xs {
         padding-left: .5em;
@@ -105,12 +128,144 @@
     .center-this {
             text-align: center;
         }
-    #guarenteed {
-        margin-top: .25em;
-        margin-bottom: .25em;
+    .page-header {
+        color:red;
+        font-weight:bold;
+    }
+    .blue-shadow {
+        border-color:#9ecaed;
+        box-shadow: 0px 3px 3px 0 #0000ff;
+    }
+    .panel-heading {
+        color:red;
+        font-weight:bold;
+        text-align: center;
+    }
+    .btn-red {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    .btn-red:hover {
+        color: red;
+        background-color: white;
+        transition: color .25s ease, background-color .25s ease;
+    }
+    .red-shadow-img {
+        height: 370px;
+        width: 700px;
+        border-color:#9ecaed;
+        box-shadow: 0px 3px 3px 0 #ff0000;
+    }
+    #contact-header {
+        font-weight: bold;
+    }
+    .contact-head-text {
+        font-weight: 600;
+    }
+    .guarenteed {
         font-size: 1.1em;
         box-sizing: border-box;
-        line-height: 1.1em;
+        background-color: #cb2026;
+        color: white;
+        font-weight: bold;
+        max-width: 190px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #banner-car-wrap {
+        position: relative;
+    }
+    .smoke {
+        position: absolute;
+        bottom: 25px;
+        left: 90px;
+        animation-name: smoke;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    #smoke1 {
+        color: rgb(96,96,96);
+        z-index: 1;
+    }
+    #smoke2 {
+        animation-delay: .25s;
+        color: rgb(128,128,128);
+        z-index: 2;
+    }
+    #smoke3 {
+        animation-delay: .5s;
+        color: rgb(160,160,160);
+        z-index: 3;
+    }
+    #smoke4 {
+        animation-delay: .75s;
+        color: rgb(192,192,192);
+        z-index: 4;
+    }
+    #cloud {
+        position: absolute;
+        top: -100px;
+        right: 40px;
+        font-size: 4em;
+        z-index: 1;
+        animation-name: cloud;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .wheel {
+        position: absolute;
+        background: url('/img/wheel.png');
+        background-size: contain;
+        z-index: 6;
+        height: 24px;
+        width: 24px;
+        animation-name: spin;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    #wheel1 {
+        bottom: 17px;
+        left: 106px;
+    }
+    #wheel2 {
+        bottom: 17px;
+        left: 217px;
+    }
+    .blue-font {
+        color: #0000ff;
+    }
+    @media (max-width: 1199px) {
+        #cloud {
+            right: 0px;
+        }
+        #wheel1 {
+            left: 73px;
+        }
+        #wheel2 {
+            left: 184px;
+        }
+        .smoke {
+            left: 57px;
+        }
+    }
+    @media screen and (max-width: 1048px) {
+        #banner-logo {
+            max-height: 130px;
+        }
+    }
+    @media (max-width: 480px) {
+        .main-navbar .fa {
+            font-size: 1.3em;
+        }
+        .main-navbar > li > a {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -127,13 +282,27 @@
     <div id="banner">
         <div class="container">
             <div id="banner-box" class="row">
-                <div class="col-md-8">
-                    <h1 id="store-name">E&amp;T Auto Repair</h1>
-                    <p id="store-address">1111 Some St. | Deer Park, NY 11111 | 123.456.7890</p>
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <div id="banner-car-wrap">
+                        <img id="banner-car" class="img-responsive" src="{{ URL::asset('img/logo-car.png') }}">
+                        <span id="smoke1" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span id="smoke2" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span id="smoke3" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span id="smoke4" class="smoke"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span id="cloud" class="cloud"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span id="wheel1" class="wheel"></i></span>
+                        <span id="wheel2" class="wheel"></i></span>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="hidden-xs hidden-sm">The right choice for auto and light truck repair in Suffolk County since 1971.</div>
-                    <div id="guarenteed" class="label label-danger">All Work Guarenteed!</div>
+                    <h1 class="center-this"><img id="banner-logo" class="img-responsive" src="{{ URL::asset('img/header-logo.png') }}"></h1>
+                    <div class="visible-sm visible-xs guarenteed label">All Work Guarenteed!</div>
+                </div>
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <h3 id="contact-header">Contact Us!</h3>
+                    <p class="contact-head-text">509 Commack Rd | Deer Park, NY 11729</p>
+                    <p class="contact-head-text">The right choice for auto and light truck repair in Suffolk County since 1971.</p>
+                    <div class="guarenteed label">All Work Guarenteed!</div>
                 </div>
             </div>
         </div>
@@ -201,5 +370,7 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     @yield('postjquery')
+    <script>
+    </script>
 </body>
 </html>
