@@ -107,22 +107,22 @@ E &amp; T Auto Repair, Inc.
         <!-- Portfolio Section -->
         <div class="row">
             <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio red-shadow-img" src="http://inertiaddict.com/images/home_0_5.jpg" alt="">
+                <img class="img-responsive img-portfolio red-shadow-img" src="{{ URL::asset('img/home_0_5.jpg') }}" alt="">
             </div>
             <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio red-shadow-img" src="http://inertiaddict.com/images/home_0_12.jpg" alt="">
+                <img class="img-responsive img-portfolio red-shadow-img" src="{{ URL::asset('img/home_0_12.jpg') }}" alt="">
             </div>
             <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio red-shadow-img" src="http://inertiaddict.com/images/home_0_4.jpg" alt="">
+                <img class="img-responsive img-portfolio red-shadow-img" src="{{ URL::asset('img/home_0_4.jpg') }}" alt="">
             </div>
             <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio red-shadow-img" src="http://inertiaddict.com/images/home_0_3.jpg" alt="">
+                <img class="img-responsive img-portfolio red-shadow-img" src="{{ URL::asset('img/home_0_3.jpg') }}" alt="">
             </div>
             <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio red-shadow-img" src="http://inertiaddict.com/images/home_0_7.jpg" alt="">
+                <img class="img-responsive img-portfolio red-shadow-img" src="{{ URL::asset('img/home_0_7.jpg') }}" alt="">
             </div>
             <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio red-shadow-img" src="http://inertiaddict.com/images/home_0_8.jpg" alt="">
+                <img class="img-responsive img-portfolio red-shadow-img" src="{{ URL::asset('img/home_0_8.jpg') }}" alt="">
             </div>
         </div>
         <!-- /.row -->
@@ -326,12 +326,12 @@ E &amp; T Auto Repair, Inc.
         <hr>
 
         <div class="center-this"> 
-            <img src="http://inertiaddict.com/images/mastercard.jpg" alt="We accept Visa and Mastercard">
-            <img src="http://inertiaddict.com/images/nyscertified.jpg" alt="New York State Certified Automotive Technicians">
-            <img src="http://inertiaddict.com/images/nysinspections.jpg" alt="New York State Inspection Station">            
-            <img src="http://inertiaddict.com/images/asecert.jpg" alt="National Institute of Automotive Service Excellence">
-            <img src="http://inertiaddict.com/images/iatncert.jpg" alt="International Automotive Technicians Network">
-            <img src="http://inertiaddict.com/images/gasdacert.jpg" alt="Gasoline and Automotive Service Dealers of America">
+            <img src="{{ URL::asset('img/mastercard.jpg') }}" alt="We accept Visa and Mastercard">
+            <img src="{{ URL::asset('img/nyscertified.jpg') }}" alt="New York State Certified Automotive Technicians">
+            <img src="{{ URL::asset('img/nysinspections.jpg') }}" alt="New York State Inspection Station">
+            <img src="{{ URL::asset('img/asecert.jpg') }}" alt="National Institute of Automotive Service Excellence">
+            <img src="{{ URL::asset('img/iatncert.jpg') }}" alt="International Automotive Technicians Network">
+            <img src="{{ URL::asset('img/gasdacert.jpg') }}" alt="Gasoline and Automotive Service Dealers of America">
         </div>
 @stop
 @section('deferred')
