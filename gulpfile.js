@@ -19,23 +19,23 @@
 });*/
 
 
-var gulp = require('gulp');
+/*var gulp = require('gulp');
 var uncss = require('gulp-uncss');
 
 gulp.task('default', function() {
 	gulp.src('public/css/style.css')
 	.pipe(uncss({ html: ['http://localhost:8000/test'] }))
 	.pipe(gulp.dest('dest'));
-});
+});*/
 
-/*var gulp = require('gulp');
+var gulp = require('gulp');
 var cssnano = require('gulp-cssnano');
 
 gulp.task('default', function () {
-    gulp.src('./dest/style3.css')
+    gulp.src('./dest/ministyle.css')
     .pipe(cssnano())
     .pipe(gulp.dest('./out'));
-});*/
+});
 
 /*var htmlmin = require('gulp-htmlmin');
 var gulp = require('gulp');
