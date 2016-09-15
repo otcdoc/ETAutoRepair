@@ -30,11 +30,11 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/app.css') }}"/>
     <style>
     @keyframes smoke {
-        0% { transform: translate(0,0); opacity: 0; font-size: 1em;}
-        25% { transform: translate(-10px,-1.25px); opacity: 1; font-size: 1.25em;}
-        50% { transform: translate(-20px,-2.5px); opacity: 1; font-size: 1.5em;}
-        75% { transform: translate(-30px,-11.25px); opacity: 1; font-size: 1.75em;}
-        100% { transform: translate(-40px,-20px); opacity: 0; font-size: 2em;}
+        0% { transform: translate(0,0) scale(1,1); opacity: 0;}
+        25% { transform: translate(-10px,-1.25px)  scale(1.25,1.25); opacity: 1;}
+        50% { transform: translate(-20px,-2.5px) scale(1.5,1.5); opacity: 1;}
+        75% { transform: translate(-30px,-11.25px) scale(1.75,1.75); opacity: 1;}
+        100% { transform: translate(-40px,-20px) scale(2,2); opacity: 0;}
     }
     @keyframes cloud {
         0% { transform: translate(0,0); opacity: 0;}
