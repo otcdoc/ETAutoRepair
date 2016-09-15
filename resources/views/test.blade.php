@@ -24,6 +24,7 @@
     <!-- Favicon -->
     <link href="{{ URL::asset('favicon.ico') }}" rel="shortcut icon">
     @yield('styles')
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -88,47 +89,79 @@
         <!-- /.container -->
     </nav>
     <div class="nav-pad"></div>
-@yield('content')
-        <hr>
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="contact-heading">Contact Us:</div>
-                    <div>509 Commack Rd</div>
-                    <div>Deer Park, NY 11729</div>
-                    <div>(631) 586-7110</div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="contact-heading">Follow us:</div>
-                        <ul class="list-unstyled list-inline list-social-icons">
-                            <li>
-                                <a href="https://www.facebook.com/ET-Auto-Repair-Inc-194281337341129/"><i class="fa fa-facebook-square fa-2x"></i></a>
-                            </li>
-                        </ul>
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('{{ URL::asset('img/frontend.png') }}')"></div>
+                <div id="banner">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div id="caption-banner-box">
+                                <h2>All Work Guaranteed!</h2>
+                                <p>Call us to schedule an appointment today!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="copyright col-sm-12">
-                    <div>Copyright &copy; E&amp;T Auto Repair {{ date('Y') }} - <a href="{{ URL::to('/privacypolicy') }}">Privacy Policy</a> - Powered by <a href="http://otchest.com" target="_blank">Off The Chest Ent</a>.</div>
+            <div class="item">
+                <div class="fill" style="background-image:url('{{ URL::asset('img/lobby.jpg') }}')"></div>
+                <div id="banner">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div id="caption-banner-box">
+                                <h2>Experienced and Trusted</h2>
+                                <p>Whether it's an emergency, or just scheduled maintenance, E&amp;T has been in business for over 40 years, and knows how to treat you, your wallet, and your vehicle.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
+            <div class="item">
+                <div class="fill" style="background-image:url('{{ URL::asset('img/sign.jpg') }}')"></div>
+                <div id="banner">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div id="caption-banner-box">
+                                <h2>Established and Tested</h2>
+                                <p>Since 1971 we have been the right choice for auto and light truck repair in Suffolk County.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+    
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Welcome to E&amp;T Auto Repair
+                </h1>
+            </div>
+        </div>
     </div>
-    <!-- /.container -->
-    @yield('deferred')
-    <!-- jQuery -->
-    <script
-              src="https://code.jquery.com/jquery-3.1.0.min.js"
-              integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
-              crossorigin="anonymous"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script 
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-    @yield('postjquery')
-    <script>
-    </script>
 </body>
 </html>

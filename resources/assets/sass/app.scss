@@ -7,3 +7,305 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Modern-business
+@import "modern";
+
+@keyframes smoke {
+    0% { transform: translate(0,0) scale(1,1); opacity: 0;}
+    25% { transform: translate(-10px,-1.25px)  scale(1.25,1.25); opacity: 1;}
+    50% { transform: translate(-20px,-2.5px) scale(1.5,1.5); opacity: 1;}
+    75% { transform: translate(-30px,-11.25px) scale(1.75,1.75); opacity: 1;}
+    100% { transform: translate(-40px,-20px) scale(2,2); opacity: 0;}
+}
+@keyframes cloud {
+    0% { transform: translate(0,0); opacity: 0;}
+    25% { transform: translateX(-60px); opacity: 1;}
+    50% { transform: translateX(-120px); opacity: 1;}
+    75% { transform: translateX(-180px); opacity: 1;}
+    100% { transform: translateX(-240px); opacity: 0;}
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#banner {
+    height: 250px;
+    text-align: center;
+    background: black url('/img/bg.png') repeat-x top;
+    color: white;
+}
+#banner-car {
+    margin-top: 108px;
+    max-height:80px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    position: relative;
+}
+#banner-logo {
+    max-height:168px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255,255,255,.8);
+    border: 3px solid black;
+}
+#store-name, #store-address {
+    color: white;
+}
+.navbar {
+border-radius: 0;
+border: none;
+background-color: rgb(2,82,203);
+padding-top: 4px;
+margin-bottom: 0;
+box-shadow: 0px 0px 6px 0 black;
+}
+.navbar .nav > li {
+    display: table-cell;
+    width: 1%;
+    text-align: center;
+}
+.navbar .nav > li > a {
+    font-family:'Fjalla One', sans-serif;
+    color: white;
+    background-color: #cb2026;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 5px;
+    transition: color .25s ease, background-color .25s ease;
+}
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus, .navbar .nav > li.open > a  {
+    color: #cb2026;
+    background-color: white;
+}
+.navbar .fa {
+    font-size: 1.5em;
+    vertical-align: -.05em;
+}
+.navbar .hidden-xs {
+    padding-left: .5em;
+}
+.affix {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+.affix + .nav-pad {
+    padding-top:50px;
+}
+#banner-box {
+    background: rgba(107,154,224,.5);
+    border: 1px solid white;
+    margin: 20px 0;
+    height: 210px;
+    box-sizing: border-box;
+}
+.carousel {
+
+}
+#caption-banner-box {
+    background: rgba(107,154,224,.5);
+    border: 1px solid white;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+.center-this {
+        text-align: center;
+}
+.justify-this {
+    text-align: justify;
+}
+.page-header {
+    color:red;
+    font-weight:bold;
+}
+.blue-shadow {
+    border-color:#9ecaed;
+    box-shadow: 0px 3px 3px 2px #0000ff;
+}
+.panel-heading {
+    color:red;
+    font-weight:bold;
+    text-align: center;
+}
+.btn-red {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.btn-red:hover {
+    color: red;
+    background-color: white;
+    transition: color .25s ease, background-color .25s ease;
+}
+.red-shadow-img {
+    height: 370px;
+    width: 700px;
+    border-color:#9ecaed;
+    box-shadow: 0px 3px 3px 2px #ff0000;
+}
+#contact-header {
+    font-weight: bold;
+}
+.contact-head-text {
+    font-weight: 600;
+}
+.guarenteed {
+    font-size: 1.1em;
+    box-sizing: border-box;
+    background-color: #cb2026;
+    color: white;
+    font-weight: bold;
+    max-width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#banner-car-wrap {
+    position: relative;
+}
+.smoke {
+    position: absolute;
+    bottom: 25px;
+    left: 90px;
+    animation-name: smoke;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#smoke1 {
+    color: rgb(96,96,96);
+    z-index: 1;
+}
+#smoke2 {
+    animation-delay: .25s;
+    color: rgb(128,128,128);
+    z-index: 2;
+}
+#smoke3 {
+    animation-delay: .5s;
+    color: rgb(160,160,160);
+    z-index: 3;
+}
+#smoke4 {
+    animation-delay: .75s;
+    color: rgb(192,192,192);
+    z-index: 4;
+}
+#cloud {
+    position: absolute;
+    top: -100px;
+    right: 40px;
+    font-size: 4em;
+    z-index: 1;
+    animation-name: cloud;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.wheel {
+    position: absolute;
+    background: url('/img/wheel.png');
+    background-size: contain;
+    z-index: 6;
+    height: 24px;
+    width: 24px;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#wheel1 {
+    bottom: 17px;
+    left: 106px;
+}
+#wheel2 {
+    bottom: 17px;
+    left: 217px;
+}
+.blue-font {
+    color: #0000ff;
+}
+@media screen and (max-width: 1199px) {
+    #cloud {
+        right: 0px;
+    }
+    #wheel1 {
+        left: 73px;
+    }
+    #wheel2 {
+        left: 184px;
+    }
+    .smoke {
+        left: 57px;
+    }
+}
+@media screen and (max-width: 1048px) {
+    #banner-logo {
+        max-height: 130px;
+    }
+}
+@media (max-width: 480px) {
+    .main-navbar .fa {
+        font-size: 1.3em;
+    }
+    .main-navbar > li > a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.testimonial-slide{
+    text-align: center;
+    background-color: transparent;
+}
+.testimonial-panel {
+    margin: 20px 10% 10px 10%;
+    display: inline-block;
+}
+.testimonial-text {
+    height: 4em;
+}
+@media screen and (max-width: 1199px) {
+    .testimonial-text {
+        height: 6em;
+    }
+}
+@media screen and (max-width: 991px) {
+    .testimonial-text {
+        height: 8em;
+    }
+}
+@media screen and (max-width: 675px) {
+    .testimonial-text {
+        height: 11em;
+    }
+}
+@media screen and (max-width: 505px) {
+    .testimonial-text {
+        height: 14em;
+    }
+}
+@media screen and (max-width: 412px) {
+    .testimonial-text {
+        height: 18em;
+    }
+}
+@media screen and (max-width: 340px) {
+    .testimonial-text {
+        height: 32em;
+    }
+}
+@media screen and (max-width: 260px) {
+    .testimonial-text {
+        height: auto;
+        min-height: 35em;
+    }
+}
+.testimonial-author {
+    text-align: right;
+    font-weight: 600;
+    color: red;
+    padding-right: 10%;
+}
