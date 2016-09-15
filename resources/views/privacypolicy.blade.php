@@ -1,8 +1,6 @@
 @extends('layout')
-@section('meta')
-@stop
 @section('title')
-Contact - Magnum Air Conditioning Inc.
+Privacy Policy - E &amp; T Auto Repair Inc.
 @stop
 @section('styles')
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}"/>

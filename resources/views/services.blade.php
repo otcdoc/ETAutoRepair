@@ -1,4 +1,11 @@
 @extends('layout')
+@section('title')
+Services - E &amp; T Auto Repair, Inc.
+@stop
+@section('styles')
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}"/>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+@stop
 @section('content')
 <!-- Page Content -->
     <div class="container">
@@ -111,5 +118,4 @@
             <img src="http://inertiaddict.com/images/iatncert.jpg" alt="International Automotive Technicians Network">
             <img src="http://inertiaddict.com/images/gasdacert.jpg" alt="Gasoline and Automotive Service Dealers of America">
         </div>
-        <hr>
 @stop
