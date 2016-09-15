@@ -1,6 +1,6 @@
-const elixir = require('laravel-elixir');
+//const elixir = require('laravel-elixir');
 
-require('laravel-elixir-vue');
+//require('laravel-elixir-vue');
 
 /*
  |--------------------------------------------------------------------------
@@ -13,7 +13,42 @@ require('laravel-elixir-vue');
  |
  */
 
-elixir(mix => {
+/*elixir(mix => {
     mix.sass('app.scss')
        .webpack('app.js');
+});*/
+
+
+var gulp = require('gulp');
+var uncss = require('gulp-uncss');
+
+gulp.task('default', function() {
+	gulp.src('public/css/style.css')
+	.pipe(uncss({ html: ['http://localhost:8000/test'] }))
+	.pipe(gulp.dest('dest'));
 });
+
+/*var gulp = require('gulp');
+var cssnano = require('gulp-cssnano');
+
+gulp.task('default', function () {
+    gulp.src('./dest/style3.css')
+    .pipe(cssnano())
+    .pipe(gulp.dest('./out'));
+});*/
+
+/*var htmlmin = require('gulp-htmlmin');
+var gulp = require('gulp');
+
+gulp.task('compress', function() {
+    var opts = {
+        collapseWhitespace:    true,
+        removeAttributeQuotes: true,
+        removeComments:        true,
+        minifyJS:              true
+    };
+
+    gulp.src('./storage/framework/views/*')
+        .pipe(htmlmin(opts))
+        .pipe(gulp.dest('./storage/framework/views/'));
+});*/

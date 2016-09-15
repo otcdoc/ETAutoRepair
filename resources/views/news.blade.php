@@ -1,5 +1,10 @@
 @extends('layout')
-@section('fbsdk')
+@section('title')
+News - E &amp; T Auto Repair, Inc.
+@stop
+@section('styles')
+<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}"/>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 @stop
 @section('content')
     <!-- Page Content -->
@@ -8,7 +13,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">News
-                    <small>Latest Updates from E&T Auto</small>
+                    <small>Latest Updates from E &amp; T Auto</small>
                 </h1>
             </div>
         </div>
@@ -65,8 +70,5 @@
             </div>
         </div>
         <!-- /.row -->
-
-@stop
-@section('postjquery')
 
 @stop
