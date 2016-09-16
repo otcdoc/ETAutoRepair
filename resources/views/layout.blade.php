@@ -24,8 +24,6 @@
     <!-- Favicon -->
     <link href="{{ URL::asset('favicon.ico') }}" rel="shortcut icon">
     @yield('styles')
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -53,20 +51,25 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h1 class="center-this"><img id="banner-logo" class="img-responsive" src="{{ URL::asset('img/header-logo.png') }}"></h1>
-                    <div class="visible-sm visible-xs guarenteed label">All Work Guarenteed!</div>
+                    <h1 class="center-this"><a class="banner-phone" href="tel:+1-631-586-7110"><img id="banner-logo" class="img-responsive" src="{{ URL::asset('img/header-logo.png') }}"></a></h1>
+                    <div class="contact-head-text visible-xs visible-sm">
+                        <div class="">509 Commack Rd<br>Deer Park, NY 11729</div>
+                        <div>M-F: 8:00AM - 5:30PM</div>
+                        <div>Phone: <a class="banner-phone" href="tel:+1-631-586-7110">(631) 586-7110</a></div>
+                        <div>24Hr Tow: <a class="banner-phone" href="tel:+1-917-586-4300">(917) 586-4300</a></div>
+                    </div>
                 </div>
-                <div class="col-md-4 hidden-sm hidden-xs">
+                <div class="col-md-4 hidden-sm hidden-xs contact-head-text">
                     <h3 id="contact-header">Contact Us!</h3>
-                    <p class="contact-head-text">509 Commack Rd | Deer Park, NY 11729</p>
-                    <p class="contact-head-text">The right choice for auto and light truck repair in Suffolk County since 1971.</p>
-                    <div class="guarenteed label">All Work Guarenteed!</div>
+                    <p>509 Commack Rd | Deer Park, NY 11729</p>
+                    <p>The right choice for auto and light truck repair in Suffolk County since 1971.</p>
+                    <div class="guaranteed label">All Work Guarenteed!</div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse" role="navigation" data-spy="affix" data-offset-top="250">
+    <nav class="navbar navbar-inverse" role="navigation" data-spy="affix" data-offset-top="290">
         <div class="container">
             <!-- Collect the nav links, forms, and other content for toggling -->
             <ul class="nav nav-justified">
@@ -94,16 +97,22 @@
         <footer>
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="contact-heading">Contact Us:</div>
+                    <div class="footer-heading">Contact Us:</div>
                     <div>509 Commack Rd</div>
                     <div>Deer Park, NY 11729</div>
-                    <div>(631) 586-7110</div>
+                    <div><a href="tel:+1-631-586-7110">(631) 586-7110</a></div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="contact-heading">Follow us:</div>
+                    <div class="footer-heading">Follow us:</div>
                         <ul class="list-unstyled list-inline list-social-icons">
                             <li>
-                                <a href="https://www.facebook.com/ET-Auto-Repair-Inc-194281337341129/"><i class="fa fa-facebook-square fa-2x"></i></a>
+                                <a href="https://www.facebook.com/ET-Auto-Repair-Inc-194281337341129/"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/ET-Auto-Repair-Inc-194281337341129/"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.yelp.com/biz/e-and-t-automobile-repr-deer-park"><i class="fa fa-yelp fa-2x" aria-hidden="true"></i></i></a>
                             </li>
                         </ul>
                 </div>
