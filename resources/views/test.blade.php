@@ -23,10 +23,10 @@
     <title>@yield('title')</title>
     <!-- Favicon -->
     <link href="{{ URL::asset('favicon.ico') }}" rel="shortcut icon">
-    @yield('styles')
-    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    @yield('styles1')
+
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/app.css') }}"/>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -54,20 +54,25 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h1 class="center-this"><img id="banner-logo" class="img-responsive" src="{{ URL::asset('img/header-logo.png') }}"></h1>
-                    <div class="visible-sm visible-xs guarenteed label">All Work Guarenteed!</div>
+                    <h1 class="center-this"><a class="banner-phone" href="tel:+1-631-586-7110"><img id="banner-logo" class="img-responsive" src="{{ URL::asset('img/header-logo.png') }}"></a></h1>
+                    <div class="contact-head-text visible-xs visible-sm">
+                        <div class="">509 Commack Rd<br>Deer Park, NY 11729</div>
+                        <div>M-F: 8:00AM - 5:30PM</div>
+                        <div>Phone: <a class="banner-phone" href="tel:+1-631-586-7110">(631) 586-7110</a></div>
+                        <div>24Hr Tow: <a class="banner-phone" href="tel:+1-917-586-4300">(917) 586-4300</a></div>
+                    </div>
                 </div>
-                <div class="col-md-4 hidden-sm hidden-xs">
+                <div class="col-md-4 hidden-sm hidden-xs contact-head-text">
                     <h3 id="contact-header">Contact Us!</h3>
-                    <p class="contact-head-text">509 Commack Rd | Deer Park, NY 11729</p>
-                    <p class="contact-head-text">The right choice for auto and light truck repair in Suffolk County since 1971.</p>
-                    <div class="guarenteed label">All Work Guarenteed!</div>
+                    <p>509 Commack Rd | Deer Park, NY 11729</p>
+                    <p>The right choice for auto and light truck repair in Suffolk County since 1971.</p>
+                    <div class="guaranteed label">All Work Guarenteed!</div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse" role="navigation" data-spy="affix" data-offset-top="250">
+    <nav class="navbar navbar-inverse" role="navigation" data-spy="affix" data-offset-top="290">
         <div class="container">
             <!-- Collect the nav links, forms, and other content for toggling -->
             <ul class="nav nav-justified">
@@ -91,12 +96,6 @@
     <div class="nav-pad"></div>
     <!-- Header Carousel -->
     <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">

@@ -28,3 +28,7 @@ Route::get('/contact', function () {
 Route::get('/privacypolicy', function() {
 	return view('privacypolicy');
 });
+
+Route::get('/test', function() {
+	return view('test');
+});

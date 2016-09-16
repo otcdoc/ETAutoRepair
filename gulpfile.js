@@ -23,7 +23,7 @@
 var uncss = require('gulp-uncss');
 
 gulp.task('default', function() {
-	gulp.src('public/css/style.css')
+	gulp.src('public/css/app.css')
 	.pipe(uncss({ html: ['http://localhost:8000/test'] }))
 	.pipe(gulp.dest('dest'));
 });*/
@@ -32,7 +32,7 @@ var gulp = require('gulp');
 var cssnano = require('gulp-cssnano');
 
 gulp.task('default', function () {
-    gulp.src('./dest/ministyle.css')
+    gulp.src('./dest/style.css')
     .pipe(cssnano())
     .pipe(gulp.dest('./out'));
 });
