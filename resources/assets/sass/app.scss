@@ -29,8 +29,11 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+body {
+    color: #181a1b;
+}
 #banner {
-    height: 250px;
+    height: 290px;
     text-align: center;
     background: black url('/img/bg.png') repeat-x top;
     color: white;
@@ -99,7 +102,7 @@ box-shadow: 0px 0px 6px 0 black;
     background: rgba(107,154,224,.5);
     border: 1px solid white;
     margin: 20px 0;
-    height: 210px;
+    height: 250px;
     box-sizing: border-box;
 }
 .carousel {
@@ -120,10 +123,16 @@ box-shadow: 0px 0px 6px 0 black;
 .page-header {
     color:red;
     font-weight:bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .blue-shadow {
     border-color:#9ecaed;
     box-shadow: 0px 3px 3px 2px #0000ff;
+}
+.red-shadow {
+    border-color:#9ecaed;
+    box-shadow: 0px 3px 3px 2px #ff0000;
 }
 .panel-heading {
     color:red;
@@ -153,7 +162,7 @@ box-shadow: 0px 0px 6px 0 black;
 .contact-head-text {
     font-weight: 600;
 }
-.guarenteed {
+.guaranteed {
     font-size: 1.1em;
     box-sizing: border-box;
     background-color: #cb2026;
@@ -242,9 +251,17 @@ box-shadow: 0px 0px 6px 0 black;
         left: 57px;
     }
 }
+.banner-phone {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 @media screen and (max-width: 1048px) {
+    #banner-box h1 {
+        margin: 10px auto;
+    }
     #banner-logo {
-        max-height: 130px;
+        max-height: 110px;
     }
 }
 @media (max-width: 480px) {
@@ -289,18 +306,7 @@ box-shadow: 0px 0px 6px 0 black;
 }
 @media screen and (max-width: 412px) {
     .testimonial-text {
-        height: 18em;
-    }
-}
-@media screen and (max-width: 340px) {
-    .testimonial-text {
-        height: 32em;
-    }
-}
-@media screen and (max-width: 260px) {
-    .testimonial-text {
         height: auto;
-        min-height: 35em;
     }
 }
 .testimonial-author {
@@ -308,4 +314,44 @@ box-shadow: 0px 0px 6px 0 black;
     font-weight: 600;
     color: red;
     padding-right: 10%;
+}
+.logos {
+    margin: 5px;
+    height: 60px;
+    border: 1px solid grey
+}
+.second-logos {
+    display: inline-block;
+}
+@media screen and (max-width: 251px) {
+    .logos {
+        height: 80px;
+    }
+}
+footer {
+    font-size: 1.25em;
+}
+.footer-heading {
+    font-weight: bold;
+}
+.copyright {
+    font-size: 1em;
+}
+.contact-box {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.contact-box h3 {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.service-head-text {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    max-width: 80%;
+}
+.service-body-text {
+    text-align: justify;
 }
