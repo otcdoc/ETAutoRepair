@@ -28,7 +28,7 @@ Privacy Policy - E &amp; T Auto Repair Inc.
 
                 <h2>SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</h2>
 
-                When you submit our contact form, we collect the personal information you give us such as your name, phone number, address, and email address.
+                When you send us an email, we collect the personal information you give us such as your name, phone number, address, and email address.
 
                 When you browse our store, we also automatically receive your computer’s internet protocol (IP) address in order to provide us with information that helps us learn about your browser and operating system.
 
@@ -37,7 +37,7 @@ Privacy Policy - E &amp; T Auto Repair Inc.
 
                 <h2>SECTION 2 - DISCLOSURE</h2>
 
-                We may disclose your personal information if we are required by law to do so or if you violate our Terms of Service.
+                We may disclose your personal information if we are required by law to do so.
 
                 <h2>Section 3 - Links</h2>
 
