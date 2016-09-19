@@ -102,10 +102,12 @@ Services - E &amp; T Auto Repair, Inc.
                 <div><b>We are certified by:</b></div>
                 <div>
                     <img class="logos" src="{{ URL::asset('img/nyscertified.jpg') }}" alt="New York State Certified Automotive Technicians">
-                    <img class="logos" src="{{ URL::asset('img/nysinspections.jpg') }}" alt="New York State Inspection Station">
-                    <img class="logos" src="{{ URL::asset('img/asecert.jpg') }}" alt="National Institute of Automotive Service Excellence">
-                    <img class="logos" src="{{ URL::asset('img/iatncert.jpg') }}" alt="International Automotive Technicians Network">
                     <img class="logos" src="{{ URL::asset('img/gasdacert.jpg') }}" alt="Gasoline and Automotive Service Dealers of America">
+                    <img class="logos" src="{{ URL::asset('img/asecert.jpg') }}" alt="National Institute of Automotive Service Excellence">
+                    <div class="second-logos">
+                        <img class="logos" src="{{ URL::asset('img/nysinspections.jpg') }}" alt="New York State Inspection Station">
+                        <img class="logos" src="{{ URL::asset('img/iatncert.jpg') }}" alt="International Automotive Technicians Network">
+                    </div>
                 </div>
             </div>
         </div>
