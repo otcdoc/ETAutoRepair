@@ -234,7 +234,7 @@
 
                             <li>
 
-                                <a href="https://plus.google.com/118002284370383860510"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></i></a>
+                                <a href="https://www.google.com/?gws_rd=ssl#q=et%20auto%20repair%20deer%20park%20ny&tbs=lf_od:-1,lf_oh:-1,lf:1,lf_ui:2&rflfq=1&rlha=0&rllag=40764213,-73304065,597&tbm=lcl&rldimm=2051731645042038629"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></i></a>
 
                             </li>
 
