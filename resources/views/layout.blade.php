@@ -226,6 +226,18 @@
 
                             </li>
 
+                            <li>
+
+                                <a href="http://www.cartalk.com/mechanics-files/mechanic/ny/deer-park/e-t-automobile-repair-incorporated"><img src="{{URL::asset('img/cartalk.png')}}" class="cartalk"></a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="https://www.google.com/?gws_rd=ssl#q=et%20auto%20repair%20deer%20park%20ny&tbs=lf_od:-1,lf_oh:-1,lf:1,lf_ui:2&rflfq=1&rlha=0&rllag=40764213,-73304065,597&tbm=lcl&rldimm=2051731645042038629"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></i></a>
+
+                            </li>
+
                         </ul>
 
                 </div>
