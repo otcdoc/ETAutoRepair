@@ -48,6 +48,9 @@ Contact - E &amp; T Auto Repair, Inc.
                     <li>
                         <a href="https://www.yelp.com/biz/e-and-t-automobile-repr-deer-park"><i class="fa fa-yelp fa-2x" aria-hidden="true"></i></a>
                     </li>
+                    <li>
+                        <a href="http://www.cartalk.com/mechanics-files/mechanic/ny/deer-park/e-t-automobile-repair-incorporated"><div class="cartalk" aria-hidden="true"></div></a>
+                    </li>
                 </ul>
             </div>
             <!-- Map Column -->
