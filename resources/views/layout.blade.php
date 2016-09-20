@@ -216,13 +216,25 @@
 
                             <li>
 
-                                <a href="https://www.facebook.com/ET-Auto-Repair-Inc-194281337341129/"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></i></a>
+                                <a href="https://twitter.com/service92713409"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></i></a>
 
                             </li>
 
                             <li>
 
                                 <a href="https://www.yelp.com/biz/e-and-t-automobile-repr-deer-park"><i class="fa fa-yelp fa-2x" aria-hidden="true"></i></i></a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="http://www.cartalk.com/mechanics-files/mechanic/ny/deer-park/e-t-automobile-repair-incorporated"><img src="{{URL::asset('img/cartalk.png')}}" class="cartalk"></a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="https://plus.google.com/118002284370383860510"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></i></a>
 
                             </li>
 
